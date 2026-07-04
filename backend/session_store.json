@@ -1,0 +1,54 @@
+{
+  "session_1783128240757_87rc8s": {
+    "session_id": "session_1783128240757_87rc8s",
+    "selected_mode": "interview_coach",
+    "messages": [
+      {
+        "sender": "You",
+        "text": "Practice tell me about yourself."
+      },
+      {
+        "sender": "AI",
+        "text": "Great. Let's practice like a real interview. Tell me about yourself in 60\u201390 seconds."
+      },
+      {
+        "sender": "You",
+        "text": "How are you?"
+      },
+      {
+        "sender": "AI",
+        "text": "Great. Let's practice like a real interview. Tell me about yourself in 60\u201390 seconds."
+      },
+      {
+        "sender": "You",
+        "text": "Hi, my name is Krish."
+      },
+      {
+        "sender": "AI",
+        "text": "Great. Let's practice like a real interview. Tell me about yourself in 60\u201390 seconds."
+      }
+    ],
+    "memory": {
+      "name": "Krish",
+      "likes": [],
+      "goals": [],
+      "personal_notes": [],
+      "resume_summary": "",
+      "target_roles": [],
+      "skills": [],
+      "weak_areas": []
+    },
+    "emotion_state": {
+      "user_emotion": "neutral",
+      "ai_mode": "balanced",
+      "emotion_reason": "No strong emotional signal detected."
+    },
+    "stats": {
+      "total_user_messages": 3,
+      "voice_messages": 2,
+      "text_messages": 1,
+      "interruptions": 1
+    },
+    "behavior_context": "Speech duration: 6.2s. Words: 5. Hesitations: 0. Style: slow. Pause level: medium."
+  }
+}
