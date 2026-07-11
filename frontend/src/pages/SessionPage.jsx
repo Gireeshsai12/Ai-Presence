@@ -130,8 +130,7 @@ const ws = new WebSocket(websocketUrl);
     };
     ws.onclose = () => { setStatus('Disconnected'); setAiState('idle'); };
     ws.onerror = () => { setStatus('Disconnected'); setAiState('error'); };
-  }, [settings.backendUrl, speakText]);
-
+  }, [speakText]);
   const initializeLocalSession = useCallback(() => {
     let allSessions = getSessions();
     let activeId = getActiveSessionId();
