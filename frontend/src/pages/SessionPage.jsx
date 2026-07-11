@@ -98,7 +98,15 @@ export default function SessionPage() {
   const connectWebSocket = useCallback((sessionId, modeToUse) => {
     if (wsRef.current) wsRef.current.close();
     sessionIdRef.current = sessionId;
-    const ws = new WebSocket(settings.backendUrl || 'ws://127.0.0.1:8000/ws');
+ const apiUrl =
+  process.env.REACT_APP_API_URL || "http://127.0.0.1:8000";
+
+const websocketUrl = apiUrl
+  .replace(/^https:/, "wss:")
+  .replace(/^http:/, "ws:")
+  .replace(/\/$/, "") + "/ws";
+
+const ws = new WebSocket(websocketUrl);
     wsRef.current = ws;
     ws.onopen = () => {
       setStatus('Connected');
