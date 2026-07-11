@@ -2,6 +2,12 @@ import { getSettings } from "./storage";
 import { getAuthToken } from "./authService";
 
 export function getApiBaseUrl() {
+  const environmentUrl = process.env.REACT_APP_API_URL;
+
+  if (environmentUrl) {
+    return environmentUrl.replace(/\/$/, "");
+  }
+
   const settings = getSettings();
   const raw = settings.backendUrl || "ws://127.0.0.1:8000/ws";
 
